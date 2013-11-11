@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/commog_screen_bg"
+    >
+    
+    <ListView
+        android:id="@+id/activity_capture_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:choiceMode="none"
+        android:divider="#F4F4F4"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" >
+    </ListView>   
+    
+    <LinearLayout
+        android:id="@+id/activity_capture_no_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        
+        <TextView 
+            android:text="@string/no_captures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/holo_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        
+    </LinearLayout>
+
+</FrameLayout>

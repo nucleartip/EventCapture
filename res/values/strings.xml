@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Event Capture</string>
+    <string name="app_version">2.0.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="application_id">0</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="quick_capture">Quick Capture</string>
+    <string name="new_events">New Events</string>
+    <string name="saved_events">Saved Events</string>
+    <string name="logout">Logout</string>
+    <string name="sync">Sync</string>
+    <string name="setting">Setting</string>
+    <string name="no_captures">No Captures Available</string>
+    <string name="login">Login</string>
+    <string name="title">Title</string>
+    <string name="title_hint">Enter a Title for this Event</string>
+    <string name="category">Category</string>
+    <string name="category_hint">Select to Categorize this Event</string>
+    <string name="comment">Comment</string>
+    <string name="view_capture">View Capture</string>
+    <string name="add_capture">Add Capture</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="new_event">New Event</string>
+    <string name="home">Home</string>
+    <string name="new_capture">New Capture</string>
+    <string name="app_event">Events</string>
+    <string name="app_capture">Captures</string>
+
+    <string-array name="category_array">
+        <item>Select Category</item>
+        <item>Crime</item>
+        <item>Stairwell</item>
+        <item>Plumbing</item>
+        <item>Lighting</item>
+        <item>Unlock</item>
+        <item>Vandalism</item>
+        <item>Work Order</item>
+        <item>Parking Dispense</item>
+        <item>Accident</item>
+        <item>Parking Permit</item>
+        <item>Medical</item>
+        <item>Lock</item>
+        <item>Lost Property</item>
+        <item>Wildlife</item>
+        <item>Susp-Individual</item>
+        <item>Fire Alarm</item>
+        <item>Walkway</item>
+        <item>Smoking</item>
+        <item>Escort</item>
+        <item>Snow Removal</item>
+        <item>Safety Issue</item>
+        <item>Susp-Activity</item>
+        <item>Theft</item>
+        <item>Electrical</item>
+    </string-array>
+
+</resources>

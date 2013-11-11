@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/cell_height"
+    android:layout_marginBottom="@dimen/activity_5dip_margin"
+    android:layout_marginTop="@dimen/activity_5dip_margin"
+    android:background="@drawable/cell_bg"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_10dip_margin"
+            android:layout_marginRight="@dimen/activity_10dip_margin"
+            android:layout_marginTop="@dimen/activity_10dip_margin"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".8"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/event_list_cell_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="left"
+                    android:text="My First Event"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".2"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/event_list_cell_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/oval_no_border_grey"
+                    android:clickable="false"
+                    android:gravity="left"
+                    android:text="100"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_10dip_margin"
+            android:layout_marginLeft="@dimen/activity_10dip_margin"
+            android:layout_marginRight="@dimen/activity_10dip_margin"
+            android:layout_marginTop="@dimen/activity_5dip_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/event_list_cell_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Saturday, 12 2013"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".1"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_list_cell" />
+    </LinearLayout>
+
+</LinearLayout>

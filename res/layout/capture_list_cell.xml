@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/cell_bg"
+    android:gravity="center"
+    android:minHeight="70dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_5dip_margin"
+    android:paddingTop="@dimen/activity_5dip_margin" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_10dip_margin"
+        android:layout_marginRight="@dimen/activity_10dip_margin"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/capture_list_cell_holder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/capture_list_cell_image_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_5dip_margin"
+                android:layout_marginRight="@dimen/activity_5dip_margin" />
+
+            <TextView
+                android:id="@+id/capture_list_cell_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="My First Event"
+                android:textColor="@color/holo_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/capture_list_cell_image_checkmark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_5dip_margin"
+                android:layout_marginRight="@dimen/activity_5dip_margin"
+                android:layout_weight=".1"
+                android:src="@drawable/checkmark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/capture_list_cell_image_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_5dip_margin"
+            android:layout_marginRight="@dimen/activity_5dip_margin"
+            android:layout_weight=".1"
+            android:src="@drawable/location" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:src="@drawable/igotit_background" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/microphone_hot"
+            />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:drawableRight="@drawable/save_data"
+        android:textColor="@android:color/darker_gray"
+        android:text="Save" />
+
+</FrameLayout>

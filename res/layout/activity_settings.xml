@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@drawable/commog_screen_bg"
+    >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_with_grey_border" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/pagination_tile_bg"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/setting_screen_msg"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Welcome Guest !"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/igotit_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Published By:"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bluedoorway" />
+
+            <TextView
+                android:id="@+id/setting_screen_main_version_id"
+                android:textColor="@android:color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/app_version"
+                android:textStyle="bold" />
+            
+        </LinearLayout>
+    
+</LinearLayout>

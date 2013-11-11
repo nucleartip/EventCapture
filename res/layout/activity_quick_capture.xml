@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left|top"
+        android:background="@drawable/oval_transparent"
+        android:divider="@android:color/darker_gray"
+        android:dividerPadding="5dp"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/flashMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Flash:Auto"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/flashOnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/flashMainBtn"
+            android:gravity="center"
+            android:text="On"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/flashOffBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/flashOnBtn"
+            android:gravity="center"
+            android:text="Off"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/flashAutoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/flashOffBtn"
+            android:gravity="center"
+            android:text="Auto"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/cell_bg_normal"
+        android:divider="@android:color/darker_gray"
+        android:dividerPadding="2dp"
+        android:showDividers="middle" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/action_button_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:src="@drawable/capture_button_bg"
+                android:text="Capture" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/action_button_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:src="@drawable/record_button_bg"
+                android:text="Mic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/action_button_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/video_button_bg"
+                android:text="Vid" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
